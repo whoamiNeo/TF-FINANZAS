@@ -5,7 +5,7 @@ FROM openjdk:17-jdk-alpine
 WORKDIR /app
 
 # Copiar el archivo JAR generado a la imagen Docker
-COPY target/*.jar app.jar
+COPY target/app.jar app.jar
 
 # Exponer el puerto que usará la aplicación
 EXPOSE 8080
